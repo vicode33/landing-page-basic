@@ -259,14 +259,12 @@ footer {
         height: auto;
         grid-row:1/2;
     }
-    
     .header-content{
         height: 400px; 
         display:flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
-    
     .header-subtitle{
         font-size:19px;
     }
@@ -282,8 +280,6 @@ footer {
         display:block;
         margin:20px auto;
     }
-    
-    
     .menu-toggle {
         display: block;
         padding:10px;
@@ -293,27 +289,34 @@ footer {
         font-size: 24px;
         cursor: pointer;
     }
-
     .ul {
         display: none;
         flex-direction: column;
-        gap: 10px;
+        justify-content: space-evenly;
+        height: 50vh;
         background-color: #333;
         position: absolute;
         top: 50px;
         width: 100%;
-        height: 50vh;
         left: 0;
+    }
+    .li{
+        border:1px solid #ccc;
+        padding:15px;
+        width:100%;
     }
      .ul.show {
         display: flex;
     }
+
+
+/* banner */
+
     .banner {
         grid-column: 1/-1;
         grid-row:2/3;
-        height:auto; 
-        margin:0; 
-        border:1px solid red;
+        margin:40px 0;
+           
     }
     .banner-ul{ 
         list-style: none;
@@ -330,13 +333,15 @@ footer {
     }
     
     .hero{
-        grid-column: 1/-1;
-        grid-row:3/4;
-        height:auto; 
-        margin: 0 20px;  
+        display:none;
     }
+
+
+    /* destacados */
+
     .featured-properties{
-        grid-row: 4/5;   
+        grid-row: 3/4;   
+        margin:40px 0;
     }
     .card-content{
         width:90%;
@@ -353,19 +358,24 @@ footer {
     .featured-card p{
        display:none;
     }
-    
     .featured-card img{ 
         height:180px;
+    }
+
+
+    /* services */
+    
+    .services {
+        grid-column: 1 / -1; 
+        grid-row: 4 / 5;    
     }
     .title-services {
         font-size: 1.5rem; /
     }
-
     .icons-content {
         flex-direction: column; 
         align-items: center; 
     }
-
     .icon {
         width: 100%; 
         max-width: 150px; 
@@ -373,6 +383,5 @@ footer {
     }
    
     
-   
 
 }
