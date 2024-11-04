@@ -220,10 +220,71 @@ footer {
 
 
 /* Responsive */
-@media (max-width: 768px) {
-    header {
-        height: 40vh;
+
+@media (max-width: 968px) {
+    header{
+        height: 50vh;
     }
+    
+    .header-content{
+        height: 400px; 
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .header-subtitle{
+        font-size:19px;
+    }
+  
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    header{
+        height: 50vh;
+    }
+    
+    .header-content{
+        height: 400px; 
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .header-subtitle{
+        font-size:19px;
+    }
+    .cta-button {
+        background-color:#ff6b6b;
+        width:250px;
+        padding:15px;
+        line-height: 25px;
+        text-align: center;
+        text-decoration: none;
+        font-size:17px;
+        color:#fff;
+        display:block;
+        margin:20px auto;
+    }
+    
+    
     .menu-toggle {
         display: block;
         padding:10px;
@@ -297,18 +358,18 @@ footer {
         height:180px;
     }
     .title-services {
-        font-size: 1.5rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+        font-size: 1.5rem; /
     }
 
     .icons-content {
-        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
-        align-items: center; /* Centrar horizontalmente en columna */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .icon {
-        width: 100%; /* Hacer que los íconos ocupen el 100% del ancho */
-        max-width: 150px; /* Ancho máximo para los íconos */
-        margin: 10px 0; /* Espaciado entre los íconos en columna */
+        width: 100%; 
+        max-width: 150px; 
+        margin: 10px 0; 
     }
    
     
